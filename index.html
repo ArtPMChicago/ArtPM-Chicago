@@ -3039,94 +3039,79 @@ ART PM
 		<br>
 		
 		<div style="background-color: #b38975">
-		<div class="slideshow-container" >
-
-			<div class="mySlides fade">
-			  <div class="numbertext"></div>
-			  <img src="re1.jpg" style="width:100%">
-			
-			</div>
-			
-			<div class="mySlides fade">
-			  <div class="numbertext"></div>
-			  <img src="re2.jpg" style="width:100%">
-			
-			</div>
-			
-			<div class="mySlides fade">
-			  <div class="numbertext"></div>
-			  <img src="re3.jpg" style="width:100%">
-			  
-			</div>
-			<div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="re4.png" style="width:100%">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				<img  src='re2.jpg' style='width: 100%;' alt="fighting nazca boobies"/>
 				
-			  </div>
-
-			  <div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="re5.png" style="width:100%">
+				  </div>
+				<div class="mySlides fade">
+				<img  src='re3.jpg' style='width: 100%;' alt="otovalo waterfall"/>
 				
-			  </div>
-			  <div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="re6.png" style="width:100%">
+				  </div>
+				<div class="mySlides fade">
+				<img  src='re4.png' style='width: 100%;' alt="pelican"/>
 				
-			  </div>
-			  <div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="re7.png" style="width:100%">
-				
-			  </div>
-			  <div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="re8.png" style="width:100%">
-				
-			  </div>
-			  <div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="re9.png" style="width:100%">
-				
-			  </div>
-			  <div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="re10.png" style="width:100%">
-				
-			  </div>
-			  <div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="re11.png" style="width:100%">
-				
-			  </div>
-
-			  <div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="re12.png" style="width:100%">
-				
-			  </div>
-			  <div class="mySlides fade">
-				<div class="numbertext"></div>
-				<img src="re13.png" style="width:100%">
-				
-			  </div>
-			</div>
+				  </div>
+				  <div class="mySlides fade">
+					<img  src='re5.png' style='width: 100%;' alt="pelican"/>
+						
+					  </div>
+					  <div class="mySlides fade">
+						<img  src='re6.png' style='width: 100%;' alt="pelican"/>
+							
+						  </div>
+						  <div class="mySlides fade">
+							<img  src='re7.png' style='width: 100%;' alt="pelican"/>
+							
+							  </div>
+							  <div class="mySlides fade">
+								<img  src='re8.png' style='width: 100%;' alt="pelican"/>
+								
+								  </div>
+								  <div class="mySlides fade">
+									<img  src='re9.png' style='width: 100%;' alt="pelican"/>
+										
+									  </div>
+									  <div class="mySlides fade">
+										<img  src='re10.png' style='width: 100%;' alt="pelican"/>
+										
+										  </div>
+										  <div class="mySlides fade">
+											<img  src='re11.png' style='width: 100%;' alt="pelican"/>
+											
+											  </div>
+											  <div class="mySlides fade">
+												<img  src='re12.png' style='width: 100%;' alt="pelican"/>
+												
+												  </div>
+												  <div class="mySlides fade">
+													<img  src='re13.png' style='width: 100%;' alt="pelican"/>
+										
+													  </div>
+				<!-- <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+				  <a class="next" onclick='plusSlides(1)'>&#10095;</a> -->
+				</div>
+				<br/>
 			<br>
 			
 			<div style="text-align:center">
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
+			  <span class="dot" onclick='currentSlide(1)'></span> 
+			  <span class="dot" onclick='currentSlide(2)'></span> 
+			  <span class="dot" onclick='currentSlide(3)'></span> 
+			  <span class="dot" onclick='currentSlide(4)'></span> 
+			  <span class="dot" onclick='currentSlide(5)'></span> 
+			  <span class="dot" onclick='currentSlide(6)'></span> 
+			  <span class="dot" onclick='currentSlide(7)'></span> 
+			  <span class="dot" onclick='currentSlide(8)'></span> 
+			  <span class="dot" onclick='currentSlide(9)'></span> 
+			  <span class="dot" onclick='currentSlide(10)'></span> 
+			  <span class="dot" onclick='currentSlide(11)'></span> 
+			  <span class="dot" onclick='currentSlide(12)'></span> 
+			
 			</div> 
 			
 			<script>
+
 			var slideIndex = 0;
 			showSlides();
 			
@@ -3146,6 +3131,11 @@ ART PM
 			  dots[slideIndex-1].className += " active";
 			  setTimeout(showSlides, 4000); // Change image every 2 seconds
 			}
+			function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
+} 
 			</script>
 			
 			<style>
